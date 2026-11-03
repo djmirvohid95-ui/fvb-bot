@@ -249,4 +249,4 @@ def handle_photo(message):
         bot.reply_to(message, f"⚠️ Xatolik yuz berdi: {str(e)}")
 
 print("Bot mukammal imlo rejimida ishga tushdi...")
-bot.polling(non_stop=True)
+bot.infinity_polling(none_stop=True, skip_pending=True)
